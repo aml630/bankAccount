@@ -16,3 +16,10 @@ describe('Account', function() {
  });
 
 });
+
+describe('Bank', function () {
+  it("will have many accounts inside its array", function () {
+    var testBank = new Bank();
+    expect(testBank.accounts).to.eql([])
+  });
+});
